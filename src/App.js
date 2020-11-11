@@ -1,8 +1,14 @@
 import React from 'react'
-import Header from './containers/header'
-import Footer from './containers/footer'
-import Home from './pages/home'
-import About from './pages/about'
+import { Header, Footer } from './containers'
+import { 
+	Home, 
+	About, 
+	Members, 
+	Releases, 
+	UpcomingShows,
+	Press,
+	Contact
+	} from './pages'
 
 function App() {
   return (
@@ -10,6 +16,11 @@ function App() {
     <Header />
     <Home />
     <About />
+    <Members />
+    <Releases />
+    <UpcomingShows />
+    <Press />
+    <Contact />
     <Footer />
     </>
     
