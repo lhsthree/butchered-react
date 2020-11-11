@@ -74,6 +74,31 @@ img {
     max-height:500px;
 }
 
+section #about {
+  display: block;
+  align-self: center;
+}
+
+p.about_info {
+position: relative;
+display: block;
+}
+
+p.about_info::after{
+content: "";
+position: absolute;
+background-image: url("knife.jpg");
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1; 
+}
+
 
 .music {
     font-size: 2.2rem;
@@ -113,12 +138,9 @@ li {
   display: inline;
 }
 
-
-
-
 a{
   padding: 8px;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   color:#CD48DC;
   font-family: 'Caveat', cursive;
   text-decoration: none;

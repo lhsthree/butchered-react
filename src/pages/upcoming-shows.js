@@ -5,10 +5,10 @@ export default function UpcomingShows() {
         <section className="upcoming_shows">
 	        <table>
 	            <tr>
-	                <td></td>
-	                <td></td>
-	                <td></td>
-	                <td></td>
+	                <td>Wear</td>
+	                <td>A</td>
+	                <td>Mask</td>
+	                <td>!!!!</td>
 	            </tr>
 	        </table>
 	    </section>    

@@ -9,7 +9,7 @@ export default function Home() {
 		        src="audio/shred_forever.mp3"
 		        width="300"
 		        height="90"
-		        loop="false"
+		        loop={false}
 		        autostart="false" />
 		    </audio>
     	</div>
