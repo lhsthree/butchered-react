@@ -2,11 +2,11 @@ import React from 'react'
 
 export default function Releases() {
     return (
-        <section class ="releases">
-        <figure class="album_art">
+        <section className ="releases">
+        <figure className="album_art">
             <a href="https://butchered.bandcamp.com/album/butchered">
 	            <img 
-	            	class ="releases" 
+	            	className ="releases" 
 	            	src="images/untitled.jpg" 
 	            	alt="Untitled" 
 	            />
@@ -16,7 +16,7 @@ export default function Releases() {
         <figure>
             <a href="https://butchered.bandcamp.com/album/return-to-lightningdome">
             	<img 
-            		class="releases" 
+            		className="releases" 
             		src="images/mad_max.jpg" 
             		alt="Return to Lightning Dome"
             	/>
@@ -26,7 +26,7 @@ export default function Releases() {
         <figure>
             <a href="https://butchered.bandcamp.com/album/whatever-i-guess">
             	<img 
-            		class="releases" 
+            		className="releases" 
             		src="images/whatever.jpg" 
             		alt="Whatever, I Guess..."
             	/>
@@ -35,7 +35,7 @@ export default function Releases() {
         <figure>
             <a href="https://butchered.bandcamp.com/track/shred-forever">
 	            <img 
-	            	class="releases" 
+	            	className="releases" 
 	            	src="images/shred-forever.jpg" 
 	            	alt="Shred-Forever"
 	            />

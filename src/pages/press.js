@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Press() {
     return (
-        <section class="press">
+        <section className="press">
 	        <img src="images/in_rotation.png" />
 	        <img src="images/dying_scene.png" />
 	        <img src="images/cobra_show.png" />

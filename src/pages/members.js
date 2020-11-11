@@ -7,7 +7,7 @@ export default function Members() {
 
 		        <img className="bandmember" src="images/Louis.jpg" alt="Louis" />
 
-		        <img class="bandmember" src="images/Nick.jpg" alt="Nick" />
+		        <img className="bandmember" src="images/Nick.jpg" alt="Nick" />
 
 		        <img className="bandmember" src="images/Colin.jpg" alt="Colin" />
 

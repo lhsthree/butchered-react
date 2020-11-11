@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Home() {
     return (
-        <section class="music">
-        <div class="music">Shred Forever
+        <section className="music">
+        <div className="music">Shred Forever
 		    <audio src="audio/shred_forever.mp3" controls>
 		    <embed
 		        src="audio/shred_forever.mp3"

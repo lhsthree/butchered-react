@@ -1,5 +1,12 @@
 import React from 'react'
 import { Header, Footer } from './containers'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 import { 
 	Home, 
 	About, 
@@ -10,21 +17,14 @@ import {
 	Contact
 	} from './pages'
 
-function App() {
+export default function App() {
   return (
     <>
     <Header />
-    <Home />
-    <About />
-    <Members />
-    <Releases />
-    <UpcomingShows />
-    <Press />
-    <Contact />
+    <Router />
     <Footer />
     </>
     
   );
 }
 
-export default App;
