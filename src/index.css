@@ -12,6 +12,7 @@ body {
     margin: 0 auto;
     text-align: center;
     display: flex;
+    justify-content: center
 }
 
 
@@ -23,7 +24,7 @@ h1 {
 }
 
 .banner {
-    max-width: 600px;
+    max-width: 60vw;
     margin: 0 auto;
 }
 
@@ -78,6 +79,14 @@ p.about_info {
     position: relative;
     display: block;
 }
+nav {
+  width: 95vw;
+  margin: 0 auto;
+}
+nav ul {
+  padding: 5px;
+  width: 95vw;
+}
 
 p.about_info::after {
     content: "";
@@ -93,13 +102,16 @@ p.about_info::after {
     right: 0;
     z-index: -1;
 }
+section {
+  max-width: 90vw;
+}
 
-
-.music {
-    font-size: 2.2rem;
-    font-family: 'Permanent Marker', cursive;
-    display: block;
-    justify-content: center;
+section img {
+  width: 100%;
+}
+section.music {
+    font-size: 1.0em;
+    font-family: 'Permanent Marker';
     align-items: center;
     padding: 25px;
     margin: 15px;
@@ -114,16 +126,15 @@ h3,
 td,
 th {
     color: black;
-    font-family: 'Caveat', cursive;
-    font-size: 2rem;
+    font-family: 'Caveat';
+    font-size: 1em;
     padding-left: 0;
 }
 
 .ticket_link {
     color: #CD48DC;
     text-decoration: none;
-    font-family: 'Caveat', cursive;
-    font-size: 2rem;
+    font-family: 'Caveat';
 }
 
 .ticket_link:hover {
@@ -135,11 +146,13 @@ li {
 }
 
 a {
-    padding: 8px;
-    font-size: 1.5rem;
+    padding: 10px 5px;
+    font-size: .8em;
     color: #CD48DC;
-    font-family: 'Caveat', cursive;
+    font-family: 'Caveat';
     text-decoration: none;
+    margin: 12px 0px;
+    line-height: 2.25em
 }
 
 
@@ -150,7 +163,7 @@ section {
 
 .current_page {
     font-size: 2rem;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Permanent Marker';
     position: relative;
 }
 
@@ -168,9 +181,8 @@ section {
 
 audio {
     filter: sepia(50%) saturate(70%) grayscale(2) contrast(99%) invert(12%);
-    width: 200px;
+    max-width: 200px;
     height: 25px;
-
 }
 
 nav {
@@ -186,8 +198,8 @@ footer {
 }
 
 a:hover {
-    font-size: 25px;
-    font-family: 'Permanent Marker', cursive;
+    font-size: .8em;
+    font-family: 'Permanent Marker';
 }
 
 a img:hover {
@@ -197,4 +209,44 @@ a img:hover {
 
 hr {
     display: none;
+}
+
+@media (min-width: 560px) {
+   a {
+    font-size: 1.1em;
+  }
+  a:hover {
+    font-size: 1.1em;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  p,
+  div.music
+   {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 860px ) {
+  a {
+    font-size: 1.5em;
+  }
+  a:hover {
+    font-size: 1.5em;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  p,
+  div.music
+   {
+    font-size: 1.5em;
+  }
+  body {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
