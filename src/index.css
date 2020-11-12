@@ -7,9 +7,9 @@
 
 body {
     background-color: white;
-    max-width: 900px;
     align-items: center;
     margin: 0 auto;
+    padding: 0;
     text-align: center;
     display: flex;
     justify-content: center
@@ -28,10 +28,12 @@ h1 {
     margin: 0 auto;
 }
 
-.members {
+div.members {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .bandmember {
@@ -80,12 +82,11 @@ p.about_info {
     display: block;
 }
 nav {
-  width: 95vw;
+  max-width: 1000px;
   margin: 0 auto;
 }
 nav ul {
-  padding: 5px 20px;
-  width: 95vw;
+  padding: 5px 25px;
 }
 
 p.about_info::after {
@@ -102,9 +103,6 @@ p.about_info::after {
     right: 0;
     z-index: -1;
 }
-section {
-  max-width: 90vw;
-}
 
 section img {
   width: 100%;
@@ -119,6 +117,13 @@ section.music {
 
 table {
     width: 100%;
+}
+
+div.music p {
+  font-size: 1.0em;
+  font-family: 'Permanent Marker';
+  margin-bottom: .1em;
+  padding-bottom: .1em;
 }
 
 p,
@@ -222,16 +227,23 @@ hr {
     display: flex;
     justify-content: space-between;
   }
-  p,
-  div.music
+  p
    {
-    font-size: 1.1em;
+    font-size: 1.8em;
+  }
+  div.music {
+    font-size: 1.8em;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    max-width: 490px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 860px ) {
   a {
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
   a:hover {
     font-size: 1.5em;
@@ -243,10 +255,15 @@ hr {
   p,
   div.music
    {
-    font-size: 1.5em;
+    font-size: 2em;
   }
   body {
-    max-width: 80%;
+    max-width: 1600px;
     margin: 0 auto;
+  }
+  section.press {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

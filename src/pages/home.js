@@ -3,7 +3,7 @@ import React from 'react'
 export default function Home() {
     return (
         <section className="music">
-        <div className="music">Shred Forever
+        <div className="music"><p<Shred Forever</p>
 		    <audio src="audio/shred_forever.mp3" controls>
 		    <embed
 		        src="audio/shred_forever.mp3"
