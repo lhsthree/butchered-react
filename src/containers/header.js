@@ -19,7 +19,8 @@ export default function Header() {
 	return (
 
 		<header>
-            <img className="banner" src="images/butchered_words.jpg" /><p><em> "If John Blutarsky were a band..."</em></p>
+            <img className="banner" src="images/butchered_words.jpg" />
+            <p className="quote">"If John Blutarsky were a band..."</p>
             <Router>
                 <nav>
                     <ul>
