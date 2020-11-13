@@ -80,6 +80,7 @@ section #about {
 p.about_info {
     position: relative;
     display: block;
+    max-width: 1300px;
 }
 nav {
   max-width: 1000px;
@@ -167,21 +168,9 @@ section {
 
 
 .current_page {
-    font-size: 2rem;
+    font-size: .8em;
     font-family: 'Permanent Marker';
     position: relative;
-}
-
-
-.current_page:before {
-    position: absolute;
-    content: '';
-    height: .2rem;
-    width: 100%;
-    bottom: .1rem;
-    z-index: -1;
-    background: #CD48DC;
-
 }
 
 audio {
@@ -239,6 +228,18 @@ hr {
     max-width: 490px;
     margin: 0 auto;
   }
+  .current_page {
+    font-size: .9em;
+  }
+  .current_page:before {
+    position: absolute;
+    content: '';
+    height: .15em;
+    width: 90%;
+    bottom: .1em;
+    z-index: 1;
+    background: #CD48DC;
+}
 }
 
 @media (min-width: 860px ) {
@@ -265,5 +266,8 @@ hr {
     max-width: 850px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .current_page {
+    font-size: 1.2em;
   }
 }

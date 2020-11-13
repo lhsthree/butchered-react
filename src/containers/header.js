@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  NavLink
 } from "react-router-dom";
 import { 
     Home, 
@@ -24,25 +24,39 @@ export default function Header() {
                 <nav>
                     <ul>
                         <li>
-                            <Link to ="/">Home</Link>
+                            <NavLink exact to ="/"
+                                activeClassName="current_page"
+                            >Home</NavLink>
                         </li>
                         <li>
-                            <Link to ="/about">About</Link>
+                            <NavLink exact to ="/about"
+                                activeClassName="current_page"
+                            >About</NavLink>
                         </li>
                         <li>
-                            <Link to ="/members">Members</Link>
+                            <NavLink to ="/members"
+                                activeClassName="current_page"
+                            >Members</NavLink>
                         </li>
                         <li>
-                            <Link to ="/releases">Releases</Link>
+                            <NavLink to ="/releases"
+                                activeClassName="current_page"
+                            >Releases</NavLink>
                         </li>
                         <li>
-                            <Link to ="/upcoming-shows">Upcoming Shows</Link>
+                            <NavLink to ="/upcoming-shows"
+                                activeClassName="current_page"
+                            >Upcoming Shows</NavLink>
                         </li>
                         <li>
-                            <Link to ="/press">Press</Link>
+                            <NavLink to ="/press"
+                                activeClassName="current_page"
+                            >Press</NavLink>
                         </li>
                         <li>
-                            <Link to ="/contact">Contact</Link>
+                            <NavLink to ="/contact"
+                                activeClassName="current_page"
+                            >Contact</NavLink>
                         </li>
                     </ul>
                 </nav>
