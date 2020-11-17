@@ -46,10 +46,6 @@ audio {
     height: 25px;
 }
 
-section {
-    width: 100%;
-}
-
 /* || Image styles */
 
 .banner {
@@ -101,6 +97,7 @@ a img:hover {
     opacity: 0.5;
     transform: scale(1.1);
 }
+
 
 /* || Header, Footer and Main Navigation */
 
@@ -168,7 +165,7 @@ section.music {
     font-family: 'Permanent Marker';
     align-items: center;
     padding: 25px;
-    margin: 15px;
+    
 }
 
 div.music p {
