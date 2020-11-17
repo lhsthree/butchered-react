@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { Navbar, Nav } from 'react-bootstrap'
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,51 +17,57 @@ import {
     } from '../pages'
 
 export default function Header() {
+    const [expanded, setExpanded] = useState(false);
 	return (
 
 		<header>
             <img className="banner" src="images/butchered_words.jpg" />
             <p className="quote">"If John Blutarsky were a band..."</p>
             <Router>
-                <nav>
-                    <ul>
-                        <li>
-                            <NavLink exact to ="/"
+                <Navbar expanded={expanded} bg="dark" variant="dark" expand="lg" sticky="top">
+                        <Navbar.Brand href="#home">Wax Pathetic out 11/20!!</Navbar.Brand>
+                        <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="basic-navbar-nav" />
+                        <Navbar.Collapse id="basic-navbar-nav">
+                            <Nav className="mr-auto">
+                            <NavLink 
+                                onClick={() => setExpanded(false)}
+                                exact to ="/"
                                 activeClassName="current_page"
                             >Home</NavLink>
-                        </li>
-                        <li>
-                            <NavLink exact to ="/about"
+                           <NavLink 
+                                onClick={() => setExpanded(false)}
+                                to ="/about"
                                 activeClassName="current_page"
                             >About</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to ="/members"
+                            <NavLink 
+                                onClick={() => setExpanded(false)}
+                                to ="/members"
                                 activeClassName="current_page"
                             >Members</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to ="/releases"
+                            <NavLink 
+                                onClick={() => setExpanded(false)}
+                                to ="/releases"
                                 activeClassName="current_page"
                             >Releases</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to ="/upcoming-shows"
+                            <NavLink 
+                                onClick={() => setExpanded(false)}
+                                to ="/upcoming-shows"
                                 activeClassName="current_page"
                             >Upcoming Shows</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to ="/press"
+                            <NavLink 
+                                onClick={() => setExpanded(false)}
+                                to ="/press"
                                 activeClassName="current_page"
                             >Press</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to ="/contact"
+                            <NavLink 
+                                onClick={() => setExpanded(false)}
+                                to ="/contact"
                                 activeClassName="current_page"
                             >Contact</NavLink>
-                        </li>
-                    </ul>
-                </nav>
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Navbar>
+                
                     <Switch>
                         <Route exact path="/about">
                             <About />
