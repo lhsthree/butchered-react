@@ -36,7 +36,8 @@ table {
 }
 
 section {
-    margin: 30px;
+    width: 100%;
+    padding: 30px;
 }
 
 audio {
@@ -104,7 +105,7 @@ a img:hover {
 /* || Header, Footer and Main Navigation */
 
 nav {
-    width:100%;
+    width: 100%;
     margin: 0 auto;
 }
 
