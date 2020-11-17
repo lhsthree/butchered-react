@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.6799d081.chunk.css",
+    "main.css": "/static/css/main.8a4e9468.chunk.css",
     "main.js": "/static/js/main.5e55778f.chunk.js",
     "main.js.map": "/static/js/main.5e55778f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6030f482.js",
@@ -12,7 +12,7 @@
     "static/js/3.185ba39d.chunk.js.map": "/static/js/3.185ba39d.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.43b2b750.chunk.css.map": "/static/css/2.43b2b750.chunk.css.map",
-    "static/css/main.6799d081.chunk.css.map": "/static/css/main.6799d081.chunk.css.map",
+    "static/css/main.8a4e9468.chunk.css.map": "/static/css/main.8a4e9468.chunk.css.map",
     "static/js/2.1369aae8.chunk.js.LICENSE.txt": "/static/js/2.1369aae8.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/knife.e12c3c98.jpg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.6030f482.js",
     "static/css/2.43b2b750.chunk.css",
     "static/js/2.1369aae8.chunk.js",
-    "static/css/main.6799d081.chunk.css",
+    "static/css/main.8a4e9468.chunk.css",
     "static/js/main.5e55778f.chunk.js"
   ]
 }
