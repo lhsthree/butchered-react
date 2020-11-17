@@ -9,7 +9,7 @@
 body {
     background-color: white;
     align-items: center;
-    margin: auto;
+    margin: auto !important;
     padding: 0;
     text-align: center !important;
     display: flex;
@@ -23,7 +23,7 @@ div.members {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-    width: 100%;
+    max-width: 1000px;
 }
 
 section #about {
@@ -43,6 +43,10 @@ audio {
     filter: sepia(50%) saturate(70%) grayscale(2) contrast(99%) invert(12%);
     max-width: 200px;
     height: 25px;
+}
+
+section {
+    width: 100%;
 }
 
 /* || Image styles */
@@ -100,19 +104,10 @@ a img:hover {
 /* || Header, Footer and Main Navigation */
 
 nav {
-    max-width:100%;
+    width:100%;
     margin: 0 auto;
 }
 
-nav ul {
-    display: block;
-    padding: 5px 25px;
-    width: 100%;
-}
-
-li {
-    display: inline;
-}
 
 nav {
     border-bottom: 4px solid #CD48DC;
