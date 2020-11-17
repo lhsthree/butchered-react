@@ -9,7 +9,7 @@
 body {
     background-color: white;
     align-items: center;
-    margin: auto !important;
+    margin: auto;
     padding: 0;
     text-align: center !important;
     display: flex;
@@ -100,8 +100,18 @@ a img:hover {
 /* || Header, Footer and Main Navigation */
 
 nav {
-    max-width: 1000px;
+    max-width:100%;
     margin: 0 auto;
+}
+
+nav ul {
+    display: block;
+    padding: 5px 25px;
+    width: 100%;
+}
+
+li {
+    display: inline;
 }
 
 nav {
@@ -116,6 +126,10 @@ footer {
 
 hr {
     display: none;
+}
+
+.navbar-brand {
+    text-align: left;
 }
 
 /* || Typography */
@@ -169,7 +183,7 @@ td,
 th {
     color: black;
     font-family: 'Caveat';
-    font-size: 1em;
+    font-size: 1.5em;
     padding-left: 0;
 }
 
@@ -185,7 +199,7 @@ th {
 
 a {
     padding: 10px 5px;
-    font-size: .8em;
+    font-size: 1.5em;
     color: #CD48DC !important;
     font-family: 'Caveat';
     text-decoration: none !important;
@@ -194,13 +208,13 @@ a {
 }
 
 .current_page {
-    font-size: .8em;
+    font-size: 1.5em;
     font-family: 'Permanent Marker';
     position: relative;
 }
 
 a:hover {
-    font-size: .8em;
+    font-size: 1.5em;
     font-family: 'Permanent Marker';
 }
 
@@ -245,7 +259,7 @@ p.quote {
         position: absolute;
         content: '';
         height: .15em;
-        width: 90%;
+        width: 53%;
         bottom: .1em;
         z-index: 1;
         background: #CD48DC;
@@ -254,7 +268,7 @@ p.quote {
 
 @media (min-width: 860px) {
     a {
-        font-size: 1.6em;
+        font-size: 1.5em;
     }
 
     a:hover {
@@ -292,10 +306,4 @@ p.quote {
     td {
         font-size: 2.5em;
     }
-}
-
-@media (min-width: 992px) {
-   .current_page:before {
-    display: none;
-   }
 }

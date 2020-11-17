@@ -25,10 +25,10 @@ export default function Header() {
             <p className="quote">"If John Blutarsky were a band..."</p>
             <Router>
                 <Navbar expanded={expanded} bg="dark" variant="dark" expand="lg" sticky="top">
-                        <Navbar.Brand href="#home">Wax Pathetic out 11/20!!</Navbar.Brand>
+                        <Navbar.Brand disabled href="https://butchered.bandcamp.com/">Wax Pathetic out 11/20!!</Navbar.Brand>
                         <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="mr-auto">
+                            <Nav className="">
                             <NavLink 
                                 onClick={() => setExpanded(false)}
                                 exact to ="/"
