@@ -132,6 +132,11 @@ hr {
     text-align: left;
 }
 
+.navbar-nav {
+    width: 100%;
+    justify-content: space-around;
+}
+
 /* || Typography */
 
 h1 {
@@ -306,4 +311,7 @@ p.quote {
     td {
         font-size: 2.5em;
     }
+}
+
+@media (min-width: 992px) {
 }
