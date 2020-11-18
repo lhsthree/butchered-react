@@ -40,7 +40,7 @@ export default function Header() {
                             >Home</NavLink>
                            <NavLink 
                                 onClick={() => setExpanded(false)}
-                                to ="/about"
+                                to ={process.env.PUBLIC_URL +"/about"}
                                 activeClassName="current_page"
                             >About</NavLink>
                             <NavLink 
