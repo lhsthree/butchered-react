@@ -27,7 +27,7 @@ export default function Header() {
 		<header>
             <img className="banner" src="images/butchered_words.jpg" />
             <p className="quote">"If John Blutarsky were a band..."</p>
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
                 <Navbar expanded={expanded} bg="dark" variant="dark" expand="lg" sticky="top">
                         <Navbar.Brand disabled href="https://butchered.bandcamp.com/">Wax Pathetic out 11/20!!</Navbar.Brand>
                         <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="basic-navbar-nav" />
