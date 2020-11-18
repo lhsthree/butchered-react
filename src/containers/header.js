@@ -73,7 +73,7 @@ export default function Header() {
                     </Navbar>
                 
                     <Switch>
-                        <Route exact path="/about">
+                        <Route exact path={process.env.PUBLIC_URL +"/about"}>
                             <About />
                         </Route>
                         <Route exact path="/members">
