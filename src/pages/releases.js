@@ -3,16 +3,17 @@ import React from 'react'
 export default function Releases() {
     return (
         <section className ="releases">
-        <figure>
+        
             <a href="https://butchered.bandcamp.com/track/born-to-run-with-scissors-single">
                 <img 
                     className="releases" 
                     src="images/born.jpg" 
                     alt="Born-Run-With-Scissors"
+                    to="https://butchered.bandcamp.com/track/born-to-run-with-scissors-single"
                 />
             </a>
-        </figure>
-        <figure>
+        
+        
             <a href="https://butchered.bandcamp.com/track/shred-forever">
                 <img 
                     className="releases" 
@@ -20,8 +21,8 @@ export default function Releases() {
                     alt="Shred-Forever"
                 />
             </a>
-        </figure>
-        <figure>
+        
+        
             <a href="https://butchered.bandcamp.com/album/whatever-i-guess">
                 <img 
                     className="releases" 
@@ -29,8 +30,8 @@ export default function Releases() {
                     alt="Whatever, I Guess..."
                 />
             </a>
-        </figure>
-        <figure className="album_art">
+        
+        
             <a href="https://butchered.bandcamp.com/album/butchered">
                 <img 
                     className ="releases" 
@@ -38,8 +39,8 @@ export default function Releases() {
                     alt="Untitled" 
                 />
             </a>
-        </figure>    
-        <figure>
+           
+        
             <a href="https://butchered.bandcamp.com/album/return-to-lightningdome">
                 <img 
                     className="releases" 
@@ -47,7 +48,7 @@ export default function Releases() {
                     alt="Return to Lightning Dome"
                 />
             </a>
-        </figure>    
+            
     </section>
     )
 }
