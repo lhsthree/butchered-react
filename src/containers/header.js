@@ -27,7 +27,7 @@ export default function Header() {
 		<header>
             <img className="banner" src="images/butchered_words.jpg" />
             <p className="quote">"If John Blutarsky were a band..."</p>
-            <Router basename={process.env.PUBLIC_URL}>
+            <Router>
                 <Navbar expanded={expanded} bg="dark" variant="dark" expand="lg" sticky="top">
                         <Navbar.Brand disabled href="https://butchered.bandcamp.com/">Wax Pathetic out 11/20!!</Navbar.Brand>
                         <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="basic-navbar-nav" />
@@ -40,7 +40,7 @@ export default function Header() {
                             >Home</NavLink>
                            <NavLink 
                                 onClick={() => setExpanded(false)}
-                                to ={process.env.PUBLIC_URL +"/about"}
+                                to ="/about"
                                 activeClassName="current_page"
                             >About</NavLink>
                             <NavLink 
@@ -73,7 +73,7 @@ export default function Header() {
                     </Navbar>
                 
                     <Switch>
-                        <Route exact path={process.env.PUBLIC_URL +"/about"}>
+                        <Route exact path="/about">
                             <About />
                         </Route>
                         <Route exact path="/members">
