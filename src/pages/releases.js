@@ -3,18 +3,33 @@ import React from 'react'
 export default function Releases() {
     return (
         <section className ="releases">
+
+            <a href="https://open.spotify.com/album/6hB2NaWez6W1kmJzz4ePyh?si=3XqwM0pUQCCy-3heG9OOwg&fbclid=IwAR0RjlgP6wOQVAiqg4WA-a6TK7_QtkoqTugk9JCZrpv9pTpr9V3GQiyxzhw" target="_blank">
+                <img 
+                    className="new-release releases" 
+                    src="images/wax-pathetic.jpg" 
+                    alt="Wax-Pathetic"
+                />
+            </a>
+
+            <a href="https://butchered.bandcamp.com/track/alive-by-pearl-jam-single" target="_blank">
+                <img 
+                    className="releases" 
+                    src="images/alive.jpg" 
+                    alt="Alive-by-Pearl-Jam"
+                />
+            </a>
         
-            <a href="https://butchered.bandcamp.com/track/born-to-run-with-scissors-single">
+            <a href="https://butchered.bandcamp.com/track/born-to-run-with-scissors-single" target="_blank">
                 <img 
                     className="releases" 
                     src="images/born.jpg" 
                     alt="Born-Run-With-Scissors"
-                    to="https://butchered.bandcamp.com/track/born-to-run-with-scissors-single"
                 />
             </a>
         
         
-            <a href="https://butchered.bandcamp.com/track/shred-forever">
+            <a href="https://butchered.bandcamp.com/track/shred-forever" target="_blank">
                 <img 
                     className="releases" 
                     src="images/shred-forever.jpg" 
@@ -23,7 +38,7 @@ export default function Releases() {
             </a>
         
         
-            <a href="https://butchered.bandcamp.com/album/whatever-i-guess">
+            <a href="https://butchered.bandcamp.com/album/whatever-i-guess" target="_blank">
                 <img 
                     className="releases" 
                     src="images/whatever.jpg" 
@@ -32,7 +47,7 @@ export default function Releases() {
             </a>
         
         
-            <a href="https://butchered.bandcamp.com/album/butchered">
+            <a href="https://butchered.bandcamp.com/album/butchered" target="_blank">
                 <img 
                     className ="releases" 
                     src="images/untitled.jpg" 
@@ -41,7 +56,7 @@ export default function Releases() {
             </a>
            
         
-            <a href="https://butchered.bandcamp.com/album/return-to-lightningdome">
+            <a href="https://butchered.bandcamp.com/album/return-to-lightningdome" target="_blank">
                 <img 
                     className="releases" 
                     src="images/mad_max.jpg" 
