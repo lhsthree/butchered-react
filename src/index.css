@@ -36,8 +36,9 @@ table {
 }
 
 section {
-    width: 100%;
+    width: 90%;
     padding: 30px;
+    margin: auto;
 }
 
 audio {
@@ -271,6 +272,12 @@ p.quote {
 }
 
 @media (min-width: 860px) {
+    img.releases {
+    padding: 3px;
+    max-width: 350px;
+    max-height: 350px;
+}
+
     a {
         font-size: 1.5em;
     }
