@@ -59,6 +59,12 @@ section.releases a,
     height: 100px;
 }
 
+img.releases {
+    padding: 10px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
 img.facebook {
     max-width: 10%;
     max-height: 10%;
@@ -89,8 +95,8 @@ img {
     max-height: 500px;
 }
 
-img.releases {
-    padding: 10px;
+section img {
+    width: 100%;
 }
 
 a img:hover {
@@ -304,9 +310,7 @@ p.quote {
     td {
         font-size: 2.5em;
     }
-    img.releases {
-    padding: 3px;
-    max-width: 400px;
-    max-height: 400px;
 }
+
+@media (min-width: 992px) {
 }
