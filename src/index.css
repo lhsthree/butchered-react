@@ -12,6 +12,10 @@ body {
     margin: auto !important;
     padding: 0;
     text-align: center !important;
+    background: #42275a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #88758c, #170229);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #88758c, #170229); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 /* || General styles ||*/
@@ -69,21 +73,6 @@ img.releases {
     max-height: 500px;
 }
 
-img.facebook {
-    max-width: 10%;
-    max-height: 10%;
-}
-
-img.instagram {
-    max-width: 9%;
-    max-height: 9%;
-}
-
-img.bandcamp {
-    max-width: 9%;
-    max-height: 9%;
-}
-
 img.bandmember {
     width: 45%;
     height: 50%;
@@ -114,7 +103,6 @@ nav {
     width: 100%;
     margin: 0 auto;
 }
-
 
 nav {
     border-bottom: 4px solid #CD48DC;
@@ -158,11 +146,11 @@ p.about_info {
 p.about_info::after {
     content: "";
     position: absolute;
-    background-image: url("knife.jpg");
+    background-image: url("knife_can.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.3;
+    opacity: 0.5;
     top: 0;
     left: 0;
     bottom: 0;
@@ -189,7 +177,7 @@ p,
 h3,
 td,
 th {
-    color: black;
+    color: white;
     font-family: 'Caveat';
     font-size: 1.5em;
     padding-left: 0;
@@ -232,6 +220,13 @@ p.quote {
     margin: 0;
 }
 
+p strong {
+    color: #CD48DC;
+}
+
+div.copyright {
+    color: white;
+}
 /* || media queries */
 
 @media (min-width: 560px) {

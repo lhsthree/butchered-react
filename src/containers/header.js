@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Navbar, Nav } from 'react-bootstrap'
 import {
   BrowserRouter as Router,
@@ -19,13 +19,13 @@ import {
 
 
 export default function Header() {
+    const [expanded, setExpanded] = useState(false);
 
     
-    const [expanded, setExpanded] = useState(false);
 	return (
 
 		<header>
-            <img className="banner" src="images/butchered_words.jpg" />
+            <img className="banner" src="images/butchered_words.png" />
             <p className="quote">"If John Blutarsky were a band..."</p>
             <Router>
                 <Navbar expanded={expanded} bg="dark" variant="dark" expand="lg" sticky="top">
