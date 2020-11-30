@@ -18,13 +18,6 @@ background: -webkit-linear-gradient(to right, #88758c, #170229);  /* Chrome 10-2
 
 }
 
-iframe {
-    border: 0; 
-    width: 100%; 
-    height: 42px;
-    margin: auto;
-} 
-
 /* || General styles ||*/
 
 header {
@@ -54,7 +47,11 @@ section {
     padding: 30px;
     margin: auto;
 }
-
+ iframe {
+    border: 0; 
+    width: 100%; 
+    height: 120px;
+ }
 
 /* || Image styles */
 
@@ -205,10 +202,6 @@ a {
     line-height: 2.25em
 }
 
-a, .linktext {
-    color: #CD48DC !important;
-}
-
 .current_page {
     font-size: 1.5em;
     font-family: 'Permanent Marker';
@@ -233,7 +226,6 @@ p strong {
 div.copyright {
     color: white;
 }
-
 
 /* || media queries */
 
