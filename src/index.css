@@ -53,6 +53,9 @@ section {
     height: 120px;
  }
 
+div.music {
+    padding-bottom: 1em;
+}
 /* || Image styles */
 
 .banner {
