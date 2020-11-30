@@ -98,7 +98,6 @@ a img:hover {
     opacity: 0.5;
     transform: scale(1.1);
 }
-
 /* || Header, Footer and Main Navigation */
 
 nav {
@@ -254,7 +253,7 @@ div.copyright {
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-        max-width: 490px;
+        max-width: 700px;
         margin: 0 auto;
     }
 
