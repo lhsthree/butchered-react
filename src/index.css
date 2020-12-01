@@ -82,7 +82,9 @@ div.bandmembers {
 }
 
 div.bandmember {
-    width: 350px;
+    min-width: 350px;
+    min-height: 350px;
+    margin: 1em;
 }
 
 section.press img {
@@ -168,7 +170,7 @@ div.louis {
     position: relative;
     display: block;
     max-width: 1300px;
-    margin: 0 auto;
+    
 }
 
 div.louis::after {
@@ -178,7 +180,7 @@ div.louis::after {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.5;
+    opacity: 1;
     top: 0;
     left: 0;
     bottom: 0;
@@ -189,7 +191,6 @@ div.nick {
     position: relative;
     display: block;
     max-width: 1300px;
-    margin: 0 auto;
 }
 
 div.nick::after {
@@ -199,7 +200,7 @@ div.nick::after {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.5;
+    opacity: 1;
     top: 0;
     left: 0;
     bottom: 0;
@@ -210,7 +211,6 @@ div.colin {
     position: relative;
     display: block;
     max-width: 1300px;
-    margin: 0 auto;
 }
 
 div.colin::after {
@@ -220,7 +220,7 @@ div.colin::after {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.5;
+    opacity: 1;
     top: 0;
     left: 0;
     bottom: 0;
@@ -231,17 +231,16 @@ div.vinnie {
     position: relative;
     display: block;
     max-width: 1300px;
-    margin: 0 auto;
 }
 
 div.vinnie::after {
     content: "";
     position: absolute;
-    background-image: url("bandmember/sloth.jpg");
+    background-image: url("bandmember/Vinnie.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.5;
+    opacity: 1;
     top: 0;
     left: 0;
     bottom: 0;

@@ -4,10 +4,10 @@ export default function Members() {
     return (
         <section>
 		    <div className="members">
-		    	<div className="bandmember louis"><p>Skymall</p></div>
-		    	<div className="bandmember nick"><p>Kansas</p></div>
-		    	<div className="bandmember colin"><p>D-day</p></div>
-		    	<div className="bandmember vinnie"><p>FuckFace</p></div>
+		    	<div className="bandmember louis"><p></p></div>
+		    	<div className="bandmember nick"><p></p></div>
+		    	<div className="bandmember colin"><p></p></div>
+		    	<div className="bandmember vinnie"><p></p></div>
 		    </div>
     	</section>
     )
