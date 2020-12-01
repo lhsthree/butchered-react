@@ -4,17 +4,10 @@ export default function Members() {
     return (
         <section>
 		    <div className="members">
-		    	<div className="louis"></div>
-		    	<div className="nick"></div>
-		    	<div className="colin"></div>
-		    	<div className="vinnie"></div>
-		        <img className="bandmember" src="images/Louis.jpg" alt="Louis" />
-
-		        <img className="bandmember" src="images/Nick.jpg" alt="Nick" />
-
-		        <img className="bandmember" src="images/Colin.jpg" alt="Colin" />
-
-		        <img className="bandmember" src="images/Vinnie.jpg" alt="Vinnie" />
+		    	<div className="bandmember louis"><p>Skymall</p></div>
+		    	<div className="bandmember nick"><p>Kansas</p></div>
+		    	<div className="bandmember colin"><p>D-day</p></div>
+		    	<div className="bandmember vinnie"><p>FuckFace</p></div>
 		    </div>
     	</section>
     )

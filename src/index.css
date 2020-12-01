@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-color: white;
     align-items: center;
@@ -13,7 +14,7 @@ body {
     padding: 0;
     text-align: center !important;
     background: #42275a;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #88758c, #170229);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #88758c, #170229);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #88758c, #170229); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
@@ -31,6 +32,7 @@ div.members {
     justify-content: center;
     margin: 0 auto;
     max-width: 1000px;
+    min-height: 600px;
 }
 
 section #about {
@@ -63,7 +65,7 @@ div.music {
     margin: 0 auto;
 }
 section.releases a,
-.bandmember {
+ {
     flex: 1 0 21%;
     margin: 5px;
     height: 100px;
@@ -75,9 +77,12 @@ img.releases {
     max-height: 500px;
 }
 
-img.bandmember {
-    width: 45%;
-    height: 50%;
+div.bandmembers {
+    display: flex;
+}
+
+div.bandmember {
+    width: 350px;
 }
 
 section.press img {
@@ -149,6 +154,91 @@ p.about_info::after {
     position: absolute;
     background-image: url("knife_can.png");
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+div.louis {
+    position: relative;
+    display: block;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+div.louis::after {
+    content: "";
+    position: absolute;
+    background-image: url("bandmember/Louis.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+div.nick {
+    position: relative;
+    display: block;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+div.nick::after {
+    content: "";
+    position: absolute;
+    background-image: url("bandmember/Nick.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+div.colin {
+    position: relative;
+    display: block;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+div.colin::after {
+    content: "";
+    position: absolute;
+    background-image: url("bandmember/Colin.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+div.vinnie {
+    position: relative;
+    display: block;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+div.vinnie::after {
+    content: "";
+    position: absolute;
+    background-image: url("bandmember/sloth.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.5;
