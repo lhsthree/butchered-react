@@ -4,7 +4,7 @@ export default function Releases() {
     return (
         <section className ="releases">
 
-            <a href="https://open.spotify.com/album/6hB2NaWez6W1kmJzz4ePyh?si=3XqwM0pUQCCy-3heG9OOwg&fbclid=IwAR0RjlgP6wOQVAiqg4WA-a6TK7_QtkoqTugk9JCZrpv9pTpr9V3GQiyxzhw" target="_blank">
+            <a href="https://butchered.bandcamp.com/album/wax-pathetic" target="_blank">
                 <img 
                     className="new-release releases" 
                     src="images/wax-pathetic.jpg" 

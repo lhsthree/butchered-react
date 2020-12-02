@@ -1,6 +1,7 @@
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.css";
-import { Header, Footer } from './containers'
+import { Header, Footer, Navigation } from './containers'
+import { Navbar, Nav } from 'react-bootstrap'
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,6 +23,7 @@ export default function App() {
   return (
     <>
     <Header />
+    <Navigation />
     <Switch>
         <Route exact path="/about">
             <About />

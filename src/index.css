@@ -11,29 +11,15 @@ body {
     background-color: white;
     align-items: center;
     margin: auto !important;
+    height: 100%;
     padding: 0;
+    padding-top: 1em;
     text-align: center !important;
-    background-color: #42275a;  /* fallback for old browsers */
-    background-color: -webkit-linear-gradient(to right, #88758c, #170229);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #88758c, #170229); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
+    background-color: #19042b !important;
+    background: linear-gradient(90deg,#88758c,#170229);
+} 
 
 /* || General styles ||*/
-
-header {
-    position: relative;
-    z-index: 2;
-}
-
-div.members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 1000px;
-    min-height: 600px;
-}
 
 section #about {
     display: block;
@@ -83,8 +69,46 @@ div.bandmembers {
 
 div.bandmember {
     min-width: 350px;
-    min-height: 350px;
+    min-height: 400px;
     margin: 1em;
+    position: relative;
+    display: block;
+    max-width: 400px;
+}
+
+div.bandmember div.bio {
+    opacity: 0;
+}
+
+div.bandmember:hover {
+    opacity: 0.7;
+    transform: scale(1.1); 
+}
+
+div.bandmember:hover div.bio {
+    opacity: 2;
+}
+
+div.bandmember::after {
+    filter: brightness(60%);
+    content: "";
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+div.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 section.press img {
@@ -110,9 +134,6 @@ a img:hover {
 nav {
     width: 100%;
     margin: 0 auto;
-}
-
-nav {
     border-bottom: 4px solid #CD48DC;
     border-top: 4px solid #CD48DC;
     border-radius: 8%;
@@ -166,86 +187,20 @@ p.about_info::after {
     z-index: -1;
 }
 
-div.louis {
-    position: relative;
-    display: block;
-    max-width: 1300px;
-    
-}
-
 div.louis::after {
-    content: "";
-    position: absolute;
     background-image: url("bandmember/Louis.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-}
-div.nick {
-    position: relative;
-    display: block;
-    max-width: 1300px;
 }
 
 div.nick::after {
-    content: "";
-    position: absolute;
     background-image: url("bandmember/Nick.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-}
-div.colin {
-    position: relative;
-    display: block;
-    max-width: 1300px;
 }
 
 div.colin::after {
-    content: "";
-    position: absolute;
     background-image: url("bandmember/Colin.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-}
-div.vinnie {
-    position: relative;
-    display: block;
-    max-width: 1300px;
 }
 
 div.vinnie::after {
-    content: "";
-    position: absolute;
     background-image: url("bandmember/Vinnie.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
 }
 
 section.music {
@@ -318,6 +273,9 @@ div.copyright {
     color: white;
 }
 
+div.bandmember {
+    color: #CD48DC;
+}
 /* || media queries */
 
 @media (min-width: 560px) {
